@@ -8,7 +8,9 @@
   },
   "scripts": {
     "start": "node server.js",
-    "server": "nodemon server.js"
+    "server": "nodemon server.js",
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build"
    
   },
   "author": "",
